@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cyan: #30BCED;
+    --jet: #303036;
+    --ghostWhite: #FFFAFF;
+    --tomato: #FC5130;
+    --black: #050401;
+}
+
+.carImageContainer {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.carImageContainer img {
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text h1 {
+    color: var(--ghostWhite);
+    font-size: 120px;
+    text-shadow: 2px 2px var(--cyan);
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.text h2 {
+    color: var(--ghostWhite);
+    font-size: 20px;
+    text-shadow: 1px 2px var(--tomato);
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 500px) {
+    .text h1 {
+        font-size: 100px;
+    }
+    .text h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .text h1 {
+        font-size: 70px;
+    }
+}
